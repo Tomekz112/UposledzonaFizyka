@@ -1,4 +1,4 @@
-module example.com/Toxel
+module github.com/Tomekz112/UposledzonaFizyka
 
 go 1.16
 
