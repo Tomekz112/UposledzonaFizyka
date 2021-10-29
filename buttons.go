@@ -1,4 +1,4 @@
-package main
+package Toxel
 
 import (
 	"fmt"
@@ -14,6 +14,7 @@ type Button struct {
 	atlas      *text.Atlas
 	onPress    func()
 }
+
 //TODO: implement function for checking if user pressed button.
 
 //newButton creates new Button with simple hitboxes

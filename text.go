@@ -1,4 +1,4 @@
-package main
+package Toxel
 
 import (
 	"fmt"
@@ -39,8 +39,8 @@ func newText(Text string, position pixel.Vec, scale float64, atlas *text.Atlas) 
 func (t *ToxelText) autoLineBreak(maxX float64) {
 	t.removeEndLines()
 	var finalText = t.text
-	textlngth := float64(len(t.text)) * 6 * t.scale //gets text length by mulptiplying characters count by size of 1 character * scale 
-	if textlngth > maxX { //if textlength is crossing given point
+	textlngth := float64(len(t.text)) * 6 * t.scale //gets text length by mulptiplying characters count by size of 1 character * scale
+	if textlngth > maxX {                           //if textlength is crossing given point
 		maxChars := maxX / 6 * t.scale //get max number of characters in 1 line
 		splittedText := strings.Split(t.text, "")
 		for i := 0; i < len(splittedText)/int(maxChars); i++ { //repeat till there are less characters than maximum in 1 line

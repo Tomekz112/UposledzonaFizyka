@@ -1,4 +1,4 @@
-package main
+package Toxel
 
 import (
 	_ "image/png"
