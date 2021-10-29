@@ -2,7 +2,7 @@ module example.com/Toxel
 
 go 1.16
 
-replace example.com/Toxel => ../Toxel
+replace github.com/Tomekz112/UposledzonaFizyka => ../Toxel
 
 require (
 	github.com/faiface/pixel v0.10.0
